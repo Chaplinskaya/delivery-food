@@ -399,7 +399,7 @@ a {
     .calculating__choose 
 {
     display: block;
-    width: 500px;
+    width: 380px;
     margin: 30px auto;
 }
 }
@@ -421,7 +421,7 @@ a {
 }
 @media screen and (max-width: 900px) {
     .calculating__choose-item {
-        width:500px;
+        width:380px;
         margin-bottom: 10px;
     }
 }
@@ -436,7 +436,7 @@ a {
 }
 @media screen and (max-width: 900px) {
     .calculating__choose_medium {
-        width:500px;
+        width:380px;
     }
 }
 .calculating__choose_big {
@@ -454,7 +454,7 @@ a {
 }
 @media screen and (max-width: 900px) {
     .calculating__choose_big .calculating__choose-item {
-        width:500px;
+        width:380px;
         margin: 0 auto;
     } 
 }
