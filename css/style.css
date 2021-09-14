@@ -20,7 +20,9 @@ a {
     box-shadow:0 4px 15px rgba(0,0,0,.2);
     cursor:pointer;
     transition:.3s all;
-    outline:0 }
+    outline:0; 
+}
+
 .btn_white {
     background-color:#fff 
 }
@@ -49,6 +51,12 @@ a {
     font-size:36px;
     font-weight:400;
 }
+@media screen and (max-width: 900px) {
+    .title {
+        text-align: center;
+    }
+}
+
 .header {
     display:flex;
     justify-content:space-between;
@@ -65,7 +73,7 @@ a {
 .header__left-block {
     display:flex;
     justify-content:space-between;
-    min-width:550px;
+    width: 65%;
     }
 @media screen and (max-width: 900px) {
     .header__left-block {
@@ -88,7 +96,8 @@ a {
     margin-left: 20px;
     font-weight:700;
     font-size:18px;
-    color:#303030
+    color:#303030;
+    text-align: center;
 }
 @media screen and (max-width: 900px) {
     .header__link { 
@@ -161,7 +170,7 @@ a {
 @media screen and (max-width: 900px) {
     .preview {
         padding:28px 0 30px 0;
-}
+    }
 }
 .preview__life {
     font-weight:700;
@@ -169,6 +178,12 @@ a {
     margin-left:35px;
     margin-top:35px;
     }
+
+@media screen and (max-width: 900px) {
+    .preview__life {
+        text-align: center;
+    }
+}
 .bgc_blue {
     position:absolute;
     right:0;
@@ -193,14 +208,15 @@ a {
 @media screen and (max-width: 900px) {
     .tabcontainer { 
         display:block;
-}
+    }
 }
 .tabcontent{
     width:850px;
     position:relative;
 }
 @media screen and (max-width: 900px) {
-    .tabcontent{
+    .tabcontent
+    {
         width:100%;
     }
 }
@@ -298,14 +314,33 @@ a {
     font-weight:300;
     line-height:24px;
 }
+@media screen and (max-width: 900px) {
+    .offer__descr {
+        padding: 0 20px;
+    }
+}
 .offer__action {
     display:flex;
     align-items:center;
     justify-content:flex-end;
 }
+@media screen and (max-width: 900px) {
+    .offer__action  {
+        width: 220px;
+        margin: 20px auto 0;
+    }
+}
 .offer__advantages {
     width:330px;
     margin-top:50px;
+}
+@media screen and (max-width: 900px) {
+    .offer__advantages {
+        width: 100%;
+        margin-top:10px;
+        padding: 0 20px;
+
+    } 
 }
 .offer__advantages h2 {
     font-weight:700;
@@ -403,11 +438,11 @@ a {
 }
 @media screen and (max-width: 900px) {
     .calculating__choose 
-{
-    display: block;
-    width: 380px;
-    margin: 30px auto;
-}
+    {
+        display: block;
+        width: 380px;
+        margin: 30px auto;
+    }
 }
 .calculating__choose-item {
     display:flex;
@@ -453,7 +488,7 @@ a {
 @media screen and (max-width: 900px) {
     .calculating__choose_big {
         width:100%;
-}
+    }
 }
 .calculating__choose_big .calculating__choose-item {
     width:200px;
@@ -476,6 +511,11 @@ a {
     display:flex;
     justify-content:space-between;
     align-items:center;
+}
+@media screen and (max-width: 900px) {
+    .calculating__total {
+        width:350px;
+    }
 }
 .calculating__result {
     font-size:18px;
@@ -517,10 +557,10 @@ a {
 }
 @media screen and (max-width: 900px) {
     .menu__item {
-        width:420px;
+        width:375px;
         min-height:550px;
         margin: 20px auto;
-        
+    }  
 }
 .menu__item img {
     width:100%;
@@ -556,6 +596,11 @@ a {
 .order {
     padding-bottom:80px;
 }
+@media screen and (max-width: 900px) {
+    .order {
+        padding: 0 20px;
+    }
+}
 .order .title {
     text-align:center;
 }
@@ -569,10 +614,12 @@ a {
 @media screen and (max-width: 900px) {
     .order__form {
         flex-wrap: wrap;
+        padding: 0 20px;
+        margin-top: 40px;
     }
     .order__form .btn {
         width: 280px;
-        margin-top: 10px;
+        margin: 10px auto;
     }
 }
 .order__form img {
@@ -594,6 +641,12 @@ a {
     text-align:center;
     padding:0 20px;
     outline:0;
+}
+@media screen and (max-width: 900px)
+{
+    .order__input {
+        margin: 10px auto;
+    }
 }
 .promotion {
     padding:70px 0 240px 0;
