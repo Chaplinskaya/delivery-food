@@ -56,11 +56,22 @@ a {
     height:150px;
     padding:0 100px;
 }
+@media screen and (max-width: 900px) {
+    .header {
+        padding:0 30px;
+        height: 100px;
+    }
+}
 .header__left-block {
     display:flex;
     justify-content:space-between;
     min-width:550px;
     }
+@media screen and (max-width: 900px) {
+    .header__left-block {
+        width: 100%;
+    }
+}
 .header__logo {
     max-width:170px;
 }
@@ -73,10 +84,16 @@ a {
 }
 .header__link {
     position:relative;
-    margin-right:45px;
+    margin-right:20px;
+    margin-left: 20px;
     font-weight:700;
     font-size:18px;
     color:#303030
+}
+@media screen and (max-width: 900px) {
+    .header__link { 
+        -margin-right:25px;
+    }
 }
 .header__link:after {
     content:'';
@@ -90,7 +107,15 @@ a {
     background:#54ed39 
     }
 .header__link:last-child {
-    margin-right:0;
+    -margin-right:0;
+}
+.header__right-block {
+
+}
+@media screen and (max-width: 900px) {
+    .header__right-block {
+        display: none;
+    }
 }
 .sidepanel {
     position:fixed;
@@ -103,6 +128,11 @@ a {
     justify-content:space-between;
     align-items:center 
 }
+@media screen and (max-width: 900px) {
+    .sidepanel {
+        display: none;
+}
+}   
 .sidepanel__text {
     width:120px;
     height:120px;
@@ -143,15 +173,31 @@ a {
     background:rgba(146,242,255,.15);
     z-index:-1;
 }
+@media screen and (max-width: 900px) {
+    .bgc_blue {
+        display: none;
+    }
+}
 .tabcontainer {
     display:flex;
-    width:1130px;
+    max-width:1130px;
+    width: 100%;
     margin:0 auto;
     box-shadow:0 4px 30px rgba(0,0,0,.25);
+}
+@media screen and (max-width: 900px) {
+    .tabcontainer { 
+        display:block;
+}
 }
 .tabcontent{
     width:850px;
     position:relative;
+}
+@media screen and (max-width: 900px) {
+    .tabcontent{
+        width:100%;
+    }
 }
 .tabcontent img {
     width:100%;
@@ -170,6 +216,17 @@ a {
     font-weight:300;
     line-height:36px;
     color:rgba(0,0,0,.7);
+}
+@media screen and (max-width: 900px) {
+    .tabcontent__descr {
+        position: inherit;
+        top:0px;
+        right:0px;
+        width:100%;
+        height: 150px;
+        font-size: 16px;
+        padding: 20px;
+    }
 }
 .tabheader {
     width:280px;
@@ -207,6 +264,11 @@ a {
     display:flex;
     justify-content:space-between;
 }
+@media screen and (max-width: 900px) {
+    .offer .container {
+        flex-wrap: wrap;
+    }
+}
 .offer .bgc_y {
     position:absolute;
     width:1109px;
@@ -214,6 +276,11 @@ a {
     background:rgba(243,255,222,.45);
     z-index:-1;
     top:50px;
+}
+@media screen and (max-width: 900px) {
+    .offer .bgc_y {
+        width: 100%;
+}
 }
 .offer__text
 {
@@ -328,6 +395,14 @@ a {
     margin-top:30px;
     justify-content:center;
 }
+@media screen and (max-width: 900px) {
+    .calculating__choose 
+{
+    display: block;
+    width: 500px;
+    margin: 30px auto;
+}
+}
 .calculating__choose-item {
     display:flex;
     align-items:center;
@@ -344,6 +419,12 @@ a {
     outline:0;
     transition:.3s all;
 }
+@media screen and (max-width: 900px) {
+    .calculating__choose-item {
+        width:500px;
+        margin-bottom: 10px;
+    }
+}
 .calculating__choose-item_active {
     color:#fff;
     background-color:#54ed39;
@@ -353,13 +434,29 @@ a {
     justify-content:space-between;
     margin:30px auto 0 auto;
 }
+@media screen and (max-width: 900px) {
+    .calculating__choose_medium {
+        width:500px;
+    }
+}
 .calculating__choose_big {
     width:930px;
     justify-content:space-between;
     margin:30px auto 0 auto;
 }
+@media screen and (max-width: 900px) {
+    .calculating__choose_big {
+        width:100%;
+}
+}
 .calculating__choose_big .calculating__choose-item {
     width:200px;
+}
+@media screen and (max-width: 900px) {
+    .calculating__choose_big .calculating__choose-item {
+        width:500px;
+        margin: 0 auto;
+    } 
 }
 .calculating__divider {
     width:490px;
@@ -389,6 +486,12 @@ a {
     justify-content:space-between;
     align-items:flex-start;
 }
+@media screen and (max-width: 900px) {
+    .menu .container {
+        display:flex;
+        flex-direction: column;
+}
+}
 .menu .title {
     text-align:center;
 }
@@ -405,6 +508,13 @@ a {
     box-shadow:0 4px 25px rgba(0,0,0,.25);
     font-size:16px;
     font-weight:300;
+}
+@media screen and (max-width: 900px) {
+    .menu__item {
+        width:420px;
+        min-height:550px;
+        margin: 20px auto;
+        
 }
 .menu__item img {
     width:100%;
@@ -450,8 +560,23 @@ a {
     justify-content:space-between;
     align-items:center;
 }
+@media screen and (max-width: 900px) {
+    .order__form {
+        flex-wrap: wrap;
+    }
+    .order__form .btn {
+        width: 280px;
+        margin-top: 10px;
+    }
+}
 .order__form img {
     transform:scale(1.5);
+}
+@media screen and (max-width: 900px)
+{
+    .order__form img {
+        display: none;
+    }
 }
 .order__input {
     width:280px;
@@ -471,6 +596,12 @@ a {
 .promotion .container {
     display:flex;
 }
+@media screen and (max-width: 900px) {
+    .promotion .container {
+        display:block;
+        
+    }
+}
 .promotion .bgc_y {
     position:absolute;
     width:50%;
@@ -480,14 +611,30 @@ a {
     top:-50px;
     left:0;
 }
+@media screen and (max-width: 900px) {
+    .promotion .bgc_y {
+        width:100%; 
+    }
+}
 .promotion__text {
     width:50%;
+}
+@media screen and (max-width: 900px) {
+    .promotion__text {
+        width:100%;
+        text-align: center;
+}
 }
 .promotion__descr {
     margin-top:40px;
     font-size:20px;
     line-height:24px;
     font-weight:300;
+}
+@media screen and (max-width: 900px) {
+    .promotion__descr {
+        margin: 20px;
+    }
 }
 .promotion__descr span {
     font-weight:700;
@@ -496,8 +643,20 @@ a {
 .promotion__timer {
     width:50%;
 }
+@media screen and (max-width: 900px) {
+    .promotion__timer {
+        width:100%;
+        padding: 10px 20px;
+        text-align: center;
+    }
+}
 .promotion__timer .title {
     text-align:right;
+}
+@media screen and (max-width: 900px) {
+    .promotion__timer .title {
+        text-align:center;
+    }
 }
 .promotion__timer .timer {
     margin-top:60px;
@@ -505,6 +664,11 @@ a {
     display:flex;
     justify-content:space-between;
     align-items:center;
+}
+@media screen and (max-width: 900px) {
+    .promotion__timer .timer {
+        padding: 0 35px;
+    }
 }
 .promotion__timer .timer__block {
     width:102px;
