@@ -234,7 +234,7 @@ function postData(form) {
         //form.appendChild(statusMessage);
         form.insertAdjacentElement('afterend', statusMessage);
         const request = new XMLHttpRequest();
-        request.open('POST', 'server.php');
+        ////request.open('POST', 'server.php');
         //request.setRequestHeader('Content-type', 'multipart/form-data');
         request.setRequestHeader('Content-type', 'application/json, charset=utf-8');
         
