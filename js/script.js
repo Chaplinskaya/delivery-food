@@ -21,7 +21,6 @@ window.addEventListener('DOMContentLoaded', () => {
         tabsContent[i].classList.remove('hide');
         tabs[i].classList.add('tabheader__item_active');
     }
-
     hideTabContent();
     showTabContent();//showTabContent(0) - es6 новые правила i=0 showTabContent(i=0)
 
@@ -55,7 +54,6 @@ window.addEventListener('DOMContentLoaded', () => {
             'seconds': seconds
         };
     }
-
     function getZero(num) {
         if (num >=0 && num < 10) {
             return `0${num}`;
