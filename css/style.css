@@ -363,6 +363,19 @@ a {
     flex-direction:column;
     align-items:flex-end;
 }
+@media screen and (max-width: 900px) and (min-width: 599px)
+{
+    .offer__slider {
+        width:500px;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 600px) {
+    .offer__slider {
+        width:350px;
+        margin: 0 auto;
+    }
+}
 .offer__slider-counter {
     display:flex;
     width:180px;

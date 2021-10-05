@@ -37,7 +37,7 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     });
     //Timer
-    const deadline = '2022-09-30';
+    const deadline = '2021-12-31';
     
     function getTimeRemaining(endtime) {
         const t = Date.parse(endtime) - Date.parse(new Date()),
@@ -522,7 +522,7 @@ function showThanksModal(message) {
                 } else {
                 current.textContent = slideIndex;
             };
-            
+
             dots.forEach(dot => dot.style.opacity = '.5');
             dots[slideIndex - 1].style.opacity = '1';
 
