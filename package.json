@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "json-server": "^0.17.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -10,13 +14,10 @@
     "type": "git",
     "url": "git+https://github.com/Chaplinskaya/delivery-food.git"
   },
-  "author": "Chaplinskaya",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/Chaplinskaya/delivery-food/issues"
   },
-  "homepage": "https://github.com/Chaplinskaya/delivery-food#readme",
-  "devDependencies": {
-    "json-server": "^0.16.3"
-  }
+  "homepage": "https://github.com/Chaplinskaya/delivery-food#readme"
 }
