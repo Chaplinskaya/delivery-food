@@ -37,7 +37,7 @@ window.addEventListener('DOMContentLoaded', () => {
         }
     });
     //Timer
-    const deadline = '2021-12-31';
+    const deadline = '2022-12-31';
     
     function getTimeRemaining(endtime) {
         const t = Date.parse(endtime) - Date.parse(new Date()),
@@ -175,6 +175,7 @@ window.addEventListener('DOMContentLoaded', () => {
             this.parent.append(element);
         }
     }
+
     const getResource = async (url) => {
         const res = await fetch(url);
 
