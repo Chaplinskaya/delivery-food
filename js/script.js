@@ -338,8 +338,8 @@ function showThanksModal(message) {
 //    .then(response => response.json())
 //    .then(json => console.log(json));
 
-    //fetch('http://localhost:3000/menu')// возвращается промис-обещание
-    fetch('db.json')
+    //fetch('db.json')
+    fetch('http://localhost:3000/menu')// возвращается промис-обещание
     .then(data => data.json())//превратить в обычный js объект
     .then(res => console.log(res));
 
